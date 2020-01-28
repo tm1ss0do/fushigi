@@ -1,0 +1,11 @@
+#play-choice{
+  position: absolute;
+  width: 60%;
+  height: 500px;
+  text-align: center;
+  background: $color-back-dark-opa;
+  @include mq(){
+    width: 100vw;
+    height: 700px;
+  }
+}

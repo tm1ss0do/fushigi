@@ -1,0 +1,14 @@
+#play-basic{
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: $span-s;
+  width: 100%;
+  @extend .c-game-panel;
+  @include mq(){
+    height: 700px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}

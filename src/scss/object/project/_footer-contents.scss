@@ -1,0 +1,27 @@
+.p-footer-contents{
+  padding: $span-m;
+  width: 30%;
+  @include mq(){
+    width: 100%;
+    padding: $span-s;
+  }
+  &__title{
+    font-size: $font-s;
+    border-bottom: 1px solid $color-font-sub;
+  }
+  &__list{
+    font-size: $font-ss;
+  }
+  &__item{
+    padding: $span-ss;
+    &:hover{
+      background: $color-sub;
+      transition: .2s;
+    }
+  }
+  &__item-link{
+    color: $color-font-sub;
+    border-radius: 3px;
+    transition: .2s;
+  }
+}

@@ -1,0 +1,18 @@
+.p-footer-text{
+  font-size: $font-ss;
+  text-align: center;
+  padding: $span-s;
+  @include mq(){
+    padding: 0;
+  }
+  &__link{
+    color: $color-font-sub;
+    border-radius: 3px;
+    padding: $span-ss;
+    transition: .2s;
+    &:hover{
+      background: $color-sub;
+      transition: .2s;
+    }
+  }
+}

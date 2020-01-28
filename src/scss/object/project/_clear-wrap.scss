@@ -1,0 +1,10 @@
+.p-clear-wrap{
+  &__contents{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    @include mq(){
+      height: 100vh;
+    }
+  }
+}

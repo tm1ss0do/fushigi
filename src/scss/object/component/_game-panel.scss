@@ -1,0 +1,11 @@
+.c-game-panel{
+  flex-direction: column;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  @include mq(){
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

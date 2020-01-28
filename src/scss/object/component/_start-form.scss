@@ -1,0 +1,28 @@
+.c-start-form{
+  padding: $span-m;
+  border-radius: 3px;
+  &__btn{
+    padding: $span-m;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 30%;
+    transition: .2s;
+    background-image: url("../img/tegami_mini1.png");
+    background-position: center;
+    background-size: 100% 100%;
+    &:hover{
+      animation: startBtn .5s ease 0s alternate;
+    }
+    @include mq(){
+      width: 100%;
+    }
+  }
+}
+
+@keyframes startBtn {
+0% { transform: rotate(0deg); }
+25% { transform: rotate(-3deg); }
+50% { transform: rotate(3deg); }
+75% { transform: rotate(-3deg); }
+100% { transform: rotate(0deg); }
+}

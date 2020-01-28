@@ -1,0 +1,9 @@
+#playing{
+  justify-content: space-around;
+  width: 60%;
+  background: black;
+  @extend .c-game-panel;
+  @include mq(){
+    width: 100vw;
+  }
+}

@@ -1,0 +1,150 @@
+// ---------------------------------------
+//****************************************
+//変数
+//****************************************
+// ---------------------------------------
+// -----------------------------------------------------------------
+// color
+// -----------------------------------------------------------------
+//背景など
+$color-main: #a1e6cb; //green
+$color-sub: #e6a9a1; //orange
+$color-sub2: #e6a1dd; //pink
+$color-back-bright: #ffffff; //grey
+$color-back-bright-opa: rgba(255, 255, 255, 0.5);
+$color-back-dark: #666666; //grey
+$color-back-dark-opa: rgba(102,102,102,0.7); //grey
+//font
+$color-font-main: #333333; //black
+$color-font-sub: #e6e6e6; //grey
+// -----------------------------------------------------------------
+// font
+// -----------------------------------------------------------------
+//size
+$font-ss: 14px;
+$font-s: 16px;
+$font-m: 20px;
+$font-l: 30px;
+$font-ll: 40px;
+$font-xl: 50px;
+$font-xxl: 70px;
+//family
+$font-fam-main: 'Noto Sans JP'; // 細め
+$font-fam-sub: 'Kosugi', sans-serif; // 太め
+
+// -----------------------------------------------------------------
+// span
+// -----------------------------------------------------------------
+$span-ss: 5px;
+$span-s: 10px;
+$span-m: 20px;
+$span-l: 30px;
+$span-ll: 40px;
+$span-xl: 50px;
+$span-xxl: 60px;
+
+// ---------------------------------------
+//****************************************
+//メディアクエリ
+//****************************************
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (min-width:415px) and (max-width: 768px)',
+  'lg': 'screen and (min-width:769px) and (max-width: 1000px)',
+  'xl': 'screen and (min-width:1001px) and (max-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: sm){
+  @media #{map-get($breakpoints,$breakpoint)} {
+    @content;
+  }
+}
+
+// ---------------------------------------
+//****************************************
+//インポート
+//****************************************
+// ---------------------------------------
+// ==========================================================================
+// Foundation
+// ==========================================================================
+@import "foundation/**";
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+@import "layout/**";
+
+// ==========================================================================
+// Object
+// ==========================================================================
+
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+@import "object/component/**";
+
+// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------
+@import "object/project/**";
+
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+@import "object/utility/**";
+//
+// ul{
+//   padding-left: 0;
+// }
+//
+// .p-chara-img-box{
+//   width: 230px;
+//   height: 150px;
+//   overflow: hidden;
+// }
+// .c-img{
+//   width: 100%;
+// }
+// .msg-btn-form{
+//   display: flex;
+//   justify-content: center;
+//   padding: 10px;
+// }
+// .msg-send-btn{
+//   font-size: 20px;
+//   border: 4px solid black;
+//   border-radius: 3px;
+// }
+// .msg-send-btn:hover{
+//   cursor: pointer;
+//   background: #eee;
+// }
+// .game-panel{
+//     margin-top: 100px;
+// }
+// .c-img-box{
+//   width: 500px;
+//   height: 300px;
+//   z-index: -1;
+//   position: absolute;
+//   overflow: hidden;
+// }
+// .gameClear-wrap{
+//   display:flex;
+//   flex-direction:column;
+//   margin-top: 100px;
+//   position: absolute;
+//   top:0;
+//   background: rgba(255, 255, 255, 0.5);
+// }
+.hide{
+  display:none;
+}
+.show{
+  display: block;
+}
+
+.view{
+  display: block;
+}
