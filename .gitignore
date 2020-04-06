@@ -1,4 +1,5 @@
 node_modules
 src/img
 php.log
-#package-lock.json
+package-lock.json
+#package.json
